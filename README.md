@@ -1,14 +1,21 @@
 # progfun-clojure
 
-A Clojure library designed to ... well, that part is up to you.
+[![Build Status](https://travis-ci.org/pepegar/progfun-clojure.svg?branch=master)](https://travis-ci.org/pepegar/progfun-clojure)
 
-## Usage
+In this repo I am going to be publishing the solutions to the course Functional
+Programming Principles with Scala, but in Clojure.
 
-FIXME
+## Download
 
-## License
+If you want to download the repo, clone the repo:
+```
+git clone https://github.com/pepegar/progfun-clojure.git
+```
 
-Copyright © 2014 FIXME
+## Test
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+For testing: 
+```
+cd progfun-clojure
+lein spec
+```
