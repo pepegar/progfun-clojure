@@ -2,8 +2,7 @@
   (:require [progfun_clojure.first_week :refer :all]
             [speclj.core :refer :all]))
 
-(describe "pascal triangle"
-
+(describe "Pascal Triangle"
   (it "tests if the an incorrect call returns nil"
     (should (nil? (pascal 2 3)))
     (should (nil? (pascal 2 3))))
@@ -13,5 +12,15 @@
     (should= 3 (pascal 3 1))
     (should= 4 (pascal 4 1))
     (should= 3 (pascal 3 2))))
+
+(describe "Balance Characters"
+  (it "tests that balancing an unbalanced string returns false"
+    (should (false? (balance "(")))
+    (should (false? (balance ")")))
+    (should (false? (balance ":("))))
+
+  (it "tests that balance on a balanced string returns true"
+    (should (true? (balance "((()))")))
+    (should (true? (balance "(()(()))")))))
 
 (run-specs)
